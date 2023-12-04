@@ -11,6 +11,6 @@ extern "C" void CallConstructors()
 
 extern "C" void KernelMain(void* multiboot_structure, uint32_t magicnumber)
 {
-
+    
     while(true);
 }

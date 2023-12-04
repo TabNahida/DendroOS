@@ -1,8 +1,8 @@
 GPPPARAMS = -m64 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -Wno-write-strings
 ASPARAMS = --64
 LDPARAMS = -melf_x86_64
-objects = loader.o kernel.o
-
+objects = loader.o \
+          kernel.o \
 %.o: %.cpp
 	g++ $(GPPPARAMS) -o $@ -c $<
 
